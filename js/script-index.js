@@ -1,3 +1,8 @@
+/*función que llama a la clase donde se encuentra el ícono flecha. Luego mediante css y su propiedad display oculta la flecha*/
+$(document).ready( function(){
+	$('span.icon-arrow-left-alt').css("display", "none");
+});
+
 $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
@@ -41,5 +46,7 @@ function renderActivities(activitiesArray) {
 function renderActivity(recipe) {
 	
 }
+
+
 
 
