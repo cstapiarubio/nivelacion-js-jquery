@@ -3,6 +3,11 @@ $(document).ready( function(){
 	$('span.icon-arrow-left-alt').css("display", "none");
 });
 
+/*función que llama a la clase donde se encuentra la sección noticias. Luego mediante la función append vamos añadiendo los párrafos*/
+$(document).ready( function(){
+	$('div.callout-news').append('<p>NUEVAS RECETAS</p>');
+});
+
 $(document).ready( function(){
 
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
