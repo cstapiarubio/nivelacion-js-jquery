@@ -37,7 +37,12 @@ function renderHighlightedRecipes(recipesArray) {
 * archivo "templates/templates-recipe.html"
 */
 function renderRecipe(recipe) {
-	document.getElementsByClassname("list-recipes")
+	/* creamos los elementos titulo (receta) y parrafo (autor)*/
+	var h1 = document.createElement('h1');
+	var p = document.createElement('p');
+	/* y los elementos creados se lo asignamos como hijos al div que tiene la clase list-recipes*/
+	document.getElementsByClassname("list-recipes").appendChild(h1);
+	document.getElementsByClassname("list-recipes").appendChild(p);
 	console.log('Voy a pintar la receta: ', recipe);
 
 }
